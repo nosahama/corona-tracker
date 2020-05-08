@@ -21,6 +21,10 @@
     box-shadow: 0 30px 60px rgba();
 }
 
+.Card:hover img {
+    transform: translateY(-20px);
+}
+
 .Card img {
     /* positions this image relative to the parent element since the parent element has
     * position of relative.
@@ -31,6 +35,9 @@
     top: 0;
     height: 110%;
     z-index: -1;
+
+    /* image hover animation, move image slightly upwards */
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Card h3 {
