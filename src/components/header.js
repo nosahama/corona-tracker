@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
       <Link to="/countries">Countries</Link>
       <Link to="/updates">Updates</Link>
       <Link to="/forecast">Forecast</Link>
-      <Link to="/forecast"><button>Live Corona</button></Link>
+      <Link to="/forecast"><button>Live</button></Link>
     </div>
   </div>
 )
