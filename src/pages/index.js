@@ -59,7 +59,13 @@ const IndexPage = () => (
         {/** The properties `title`, `deaths`, `image`, etc are accessible in the
          * Card component via the component props
          * */}
-        <Card title="Africa" deaths="5,000" image={require('../images/wallpaper.jpg')} />
+         <div className="CardGroup">
+          <Card title="Africa" deaths="2,530" image={require('../images/wallpaper.jpg')} />
+          <Card title="Asia" deaths="16,080" image={require('../images/wallpaper4.jpg')} />
+          <Card title="Europe" deaths="412" image={require('../images/wallpaper2.jpg')} />
+          <Card title="North America" deaths="1,237" image={require('../images/wallpaper3.jpg')} />
+          <Card title="South America" deaths="84" image={require('../images/wallpaper4.jpg')} />
+         </div>
       </div>
     </div>
   </Layout>
