@@ -11,6 +11,14 @@
     /* Use grid display to split the card attributes */
     display: grid;
     grid-template-rows: 1fr 1fr;
+
+    /* card hover animation */
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Card:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 30px 60px rgba();
 }
 
 .Card img {
