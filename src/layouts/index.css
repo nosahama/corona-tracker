@@ -63,3 +63,21 @@ a {
     font-size: 23px;
   }
 }
+
+/*
+0% signifies effects at the beginning of the animation
+100% signifies effects at the end of the animation.
+
+This animation is later applied to the desired element.
+*/
+@keyframes HeroH1Animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
