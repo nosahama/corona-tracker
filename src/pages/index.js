@@ -26,9 +26,9 @@ const IndexPage = () => (
           </p>
           <Link to="/page-2/">Global Statuses</Link>
           <svg
-            width="2560"
+            width="100%"
             height="172"
-            viewBox="0 0 2560 172"
+            viewBox="0 0 100% 172"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
