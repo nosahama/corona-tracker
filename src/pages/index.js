@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../layouts"
 import SEO from "../components/seo"
+import Card from "../components/Card"
 
 // const IndexPage = () => (
 //   <Layout>
@@ -24,7 +25,6 @@ const IndexPage = () => (
             Get updates and visually appealing representations of the current
             pandemic across multiple countries.
           </p>
-          <Link to="/page-2/">Global Statuses</Link>
           <div className="Logos">
             <img src={require('../images/logo-sketch.png')} width="50" />
             <img src={require('../images/logo-figma.png')} width="50" />
@@ -53,6 +53,13 @@ const IndexPage = () => (
             </path>
           </svg>
         </div>
+      </div>
+      <div className="Cards">
+        <h2>Continental View</h2>
+        {/** The properties `title`, `deaths`, `image`, etc are accessible in the
+         * Card component via the component props
+         * */}
+        <Card title="Africa" deaths="5,000" image={require('../images/wallpaper.jpg')} />
       </div>
     </div>
   </Layout>
