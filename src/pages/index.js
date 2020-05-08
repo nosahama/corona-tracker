@@ -25,6 +25,15 @@ const IndexPage = () => (
             pandemic across multiple countries.
           </p>
           <Link to="/page-2/">Global Statuses</Link>
+          <div className="Logos">
+            <img src={require('../images/logo-sketch.png')} width="50" />
+            <img src={require('../images/logo-figma.png')} width="50" />
+            <img src={require('../images/logo-react.png')} width="50" />
+            <img src={require('../images/logo-studio.png')} width="50" />
+            <img src={require('../images/logo-framer.png')} width="50" />
+            <img src={require('../images/logo-swift.png')} width="50" />
+          </div>
+          {/* if svg error ever comes up, look into removing the "viewBox" attribute */}
           <svg
             width="100%"
             height="172"
