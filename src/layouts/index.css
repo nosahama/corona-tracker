@@ -36,6 +36,7 @@ a {
   opacity: 0;
   animation: HeroH1Animation;
   animation-duration: 2s;
+  animation-delay: 0.1s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -44,6 +45,10 @@ a {
   color: rgba(255, 255, 255, 0.8);
   font-size: 30px;
   line-height: 1.5;
+
+  /* single line definition of the animation, see style above */
+  opacity: 0;
+  animation: HeroH1Animation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);;
 }
 
 .Hero a {
