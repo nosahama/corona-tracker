@@ -1,3 +1,4 @@
+/* position: fixed [keeps the element fixed even while scrolling] */
 .Header {
     position: fixed;
     width: 100%;

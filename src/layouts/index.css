@@ -12,11 +12,17 @@ a {
   text-decoration: none;
 }
 
+/*
+position: relative
+- all elements within this element which have position: absolute will use this element
+to apply their styling.
+*/
 .Hero {
   background: url('../images/wallpaper3.jpg');
   height: 920px;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .HeroGroup {
@@ -91,5 +97,31 @@ This animation is later applied to the desired element.
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+.Hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Use css grid to space out the hero logos
+1fr: create equally divided columns (6)
+*/
+.Hero .Logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px;
+  margin: 100px 0;
+  justify-items: center;
+}
+
+/* Adjust hero logos for smaller screen sizes
+Show 3 logos per line
+*/
+@media (max-width: 640px) {
+  .Hero .Logos {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
