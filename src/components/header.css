@@ -1,9 +1,21 @@
-/* position: fixed [keeps the element fixed even while scrolling] */
 .Header {
     position: fixed;
+    /* position: fixed [keeps the element fixed even while scrolling] */
+
     width: 100%;
     padding: 50px 0;
     z-index: 100;
+
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    /* Add header scrolling animation */
+}
+
+.HeaderScrolled {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+
+    backdrop-filter: blur(20px);
+    /* add blur, only works on safari */
 }
 
 .HeaderGroup {
@@ -34,8 +46,8 @@
     outline: none;
     cursor: pointer;
 
-    /* Add transition for hover effect */
     transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    /* Add transition for hover effect */
 }
 
 .Header button:hover {
@@ -43,8 +55,8 @@
     color: white;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 
-    /* Add animation effects with transform */
     transform: translateY(-3px);
+    /* Add animation effects with transform */
 }
 
 /*
